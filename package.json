@@ -2,19 +2,27 @@
   "name": "oliver-spicer",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "webpack": "^5"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
+    "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint-config-next": "14.0.1",
+    "eslint-plugin-storybook": "^0.6.15",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5"
   }
 }
