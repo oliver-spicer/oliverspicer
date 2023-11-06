@@ -1,0 +1,34 @@
+.imageCardWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transition: all .5s;
+  overflow: hidden;
+  filter: grayscale(75%);
+  cursor: pointer;
+  &:hover{
+    filter: grayscale(0);
+  }
+}
+.ratio1-1 {
+  aspect-ratio: 1 / 1;
+}
+.ratio4-3 {
+  aspect-ratio: 4 / 3;
+}
+.ratio16-9 {
+  aspect-ratio: 16 / 9;
+}
+.textWrapper {
+  position: absolute;
+  transition: all .3s;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255,255,255, 1);
+  mix-blend-mode: overlay;
+}
