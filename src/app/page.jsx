@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <section className="container-sm text-center">
+      <section className="container-sm text-center py-5">
         <p className={`${styles.mainHeader} h1`}>Hi. I'm Oliver</p>
         <Heading tag="h1" appearence="h2">
           A Passionate software engineer with an <br />
