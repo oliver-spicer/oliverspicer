@@ -4,23 +4,34 @@ import { whiteLogo } from '@/images';
 import Heading from '../Heading';
 export default function Footer() {
   return (
-    <footer className="container-xl">
-      <div>
-        <Image src={whiteLogo} width="400" height="auto" alt="logo" />
+    <footer className={`${styles.footer} container-fluid p-5`}>
+      <div className="container-xl">
+        <div className="row">
+          <div className="col">
+            <Image src={whiteLogo} width="400" height="auto" alt="logo" />
+          </div>
+          <div className="col ps-5 pt-4">
+            <Heading className="pb-4" tag="h4">
+              More About Me
+            </Heading>
+            <ul>
+              <li>Company Profile</li>
+              <li>CSR Initiatives</li>
+            </ul>
+          </div>
+          <div className="col ps-5 pt-4">
+            <Heading className="pb-4" tag="h4">
+              Connect
+            </Heading>
+            <ul>
+              <li>Employee Portal</li>
+              <li>Customer Portal</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <Heading tag="h4">More About Me</Heading>
-        <ul>
-          <li>One thing</li>
-          <li>Two thing</li>
-        </ul>
-      </div>
-      <div>
-        <Heading tag="h4">Connect</Heading>
-        <ul>
-          <li>One thing</li>
-          <li>Two thing</li>
-        </ul>
+      <div className="container-xl text-center">
+        Copyright © 2023 Oliver Spicer
       </div>
     </footer>
   );

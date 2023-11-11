@@ -1,0 +1,28 @@
+@import '/public/scss/colours';
+
+.home {
+  font-size: 1.2rem;
+  color: #fff;
+  
+  .heroSection {
+    min-height: 100vh;
+    background: $green;
+    background: linear-gradient(110deg, $green 0%, $purple 100%);
+  }
+
+  .mainHeader {
+    font-size: 100px !important;
+  }
+  .subHeader {
+    font-size: 30px !important;
+  }
+  .secondaryHeader {
+    font-size: 60px !important;
+  }
+}
+.green {
+  color: $green;
+}
+.purple {
+  color: $green;
+}

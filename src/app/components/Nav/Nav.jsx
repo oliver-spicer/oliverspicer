@@ -2,7 +2,7 @@ import styles from './Nav.module.scss';
 
 export default function Nav() {
   return (
-    <nav className="navbar navbar-expand-sm">
+    <nav className={`${styles.nav} navbar navbar-expand-sm`}>
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -16,7 +16,7 @@ export default function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className={`${styles.navbar} navbar-nav`}>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
