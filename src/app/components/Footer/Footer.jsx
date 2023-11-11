@@ -4,7 +4,7 @@ import { whiteLogo } from '@/images';
 import Heading from '../Heading';
 export default function Footer() {
   return (
-    <footer className={`${styles.footer} container-fluid p-5`}>
+    <footer className={`${styles.footer} container-fluid pb-3`}>
       <div className="container-xl">
         <div className="row">
           <div className="col">

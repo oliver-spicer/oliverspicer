@@ -39,3 +39,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.cta {
+  height: 0px;
+  position: relative;
+  
+  & > div {
+    border-radius: 5px;
+    position: absolute;
+    height: 120px;
+    left: 50%;
+    top: -60px;
+    transform: translate(-50%);
+    background: #fff;
+  }
+}

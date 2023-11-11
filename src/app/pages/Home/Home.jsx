@@ -37,14 +37,16 @@ export default function Home() {
           <br />
           on intuitive user experiences.
         </p>
-        <div className="pt-3">
-          <Button variant="green" className="me-3">
-            Services
-          </Button>
-          <Button variant="green" className="ms-3">
-            My Story
-          </Button>
-        </div>
+        {false && (
+          <div className="pt-3">
+            <Button variant="green" className="me-3">
+              Services
+            </Button>
+            <Button variant="green" className="ms-3">
+              My Story
+            </Button>
+          </div>
+        )}
         <div
           style={{
             position: 'absolute',
@@ -114,14 +116,16 @@ export default function Home() {
               through my passion for coding.
             </p>
             <p>If you’d like to read more, check out my story.</p>
-            <Button variant="purple" className="mt-5">
-              My Story
-            </Button>
+            {false && (
+              <Button variant="purple" className="mt-5">
+                My Story
+              </Button>
+            )}
           </div>
         </div>
       </section>
       <section
-        className={`${styles.parallax} container-fluid my-5 text-center`}
+        className={`${styles.parallax} container-fluid mt-5 text-center`}
         style={{
           backgroundImage: `url(/images/log-pile50.jpg)`,
           padding: '300px 0',
@@ -173,48 +177,69 @@ export default function Home() {
           I’m always open to discussing potential collaborations.
         </p>
         <Button variant="green-semi-outline">Let's work together</Button>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            width: '100%',
-            overflow: 'hidden',
-            lineHeight: 0,
-          }}
-        >
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
+        {false && (
+          <div
             style={{
-              position: 'relative',
-              display: 'block',
-              width: 'calc(100% + 1.3px)',
-              height: '100px',
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              width: '100%',
+              overflow: 'hidden',
+              lineHeight: 0,
             }}
           >
-            <path
-              d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
-              class="shape-fill"
-              style={{ fill: '#FFFFFF' }}
-            ></path>
-          </svg>
-        </div>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              style={{
+                position: 'relative',
+                display: 'block',
+                width: 'calc(100% + 1.3px)',
+                height: '100px',
+              }}
+            >
+              <path
+                d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
+                class="shape-fill"
+                style={{ fill: '#FFFFFF' }}
+              ></path>
+            </svg>
+          </div>
+        )}
       </section>
-      <section className="container-xl py-5 my-5 text-center">
-        <Heading
-          tag="h2"
-          appearence="h1"
-          className={`${styles.secondaryHeader} ${styles.green}`}
-        >
-          Projects
-        </Heading>
-        <div className="row py-5">
-          <ImageCard image={projectIci} ratio="16-9" />
-          <ImageCard image={projectLs} ratio="16-9" />
-          <ImageCard image={projectRu} ratio="16-9" />
+      {false && (
+        <section className="container-xl py-5 my-5 text-center">
+          <Heading
+            tag="h2"
+            appearence="h1"
+            className={`${styles.secondaryHeader} ${styles.green}`}
+          >
+            Projects
+          </Heading>
+          <div className="row py-5">
+            <ImageCard image={projectIci} ratio="16-9" />
+            <ImageCard image={projectLs} ratio="16-9" />
+            <ImageCard image={projectRu} ratio="16-9" />
+          </div>
+        </section>
+      )}
+      <section className={styles.cta}>
+        <div className={`container-xl`}>
+          <div className="row d-flex h-100 px-5 align-items-center">
+            <div className="col-5">
+              <Heading tag="h2" appearence="h1" className={`${styles.purple}`}>
+                Start a project
+              </Heading>
+            </div>
+            <div className="col-5">
+              <p>Interested in collaborating ? Send me a mesage !</p>
+            </div>
+            <div className="col-2 text-center">
+              <Button variant="green">Let's Go !</Button>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />
