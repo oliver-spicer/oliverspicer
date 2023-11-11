@@ -1,0 +1,64 @@
+@import '/public/scss/colours';
+
+.button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+  &.btn-green {
+    background-color: $green;
+    color: #fff;
+  }
+  &.btn-green-outline {
+    background-color: none;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: $green;
+      color: #fff;
+      border-color: $green;
+    }
+  }
+  &.btn-green-semi-outline {
+    background-color: rgba(33,33,33,0.4);
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: $green;
+      color: #fff;
+      border-color: $green;
+    }
+  }
+  &.btn-purple {
+    background-color: $purple;
+    color: #fff;
+  }
+  &.btn-purple-outline {
+    background-color: none;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: $purple;
+      color: #fff;
+      border-color: $purple;
+    }
+  }
+  &.btn-purple-semi-outline {
+    background-color: rgba(33,33,33,0.4);
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: $purple;
+      color: #fff;
+      border-color: $purple;
+    }
+  }
+}

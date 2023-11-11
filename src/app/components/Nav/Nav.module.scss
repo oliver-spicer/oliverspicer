@@ -1,7 +1,11 @@
 @import '/public/scss/colours';
 
 .nav {
+  --bs-navbar-active-color: #fff;
+  font-family: 'Alegreya Sans', sans-serif;
+  letter-spacing: 1px;
   a {
+    font-weight: 500;
     color: rgba(255,255,255,0.6);
     &:hover {
       color: #fff;

@@ -11,12 +11,12 @@ export default function Header() {
         <Image
           className={`${styles.logo} me-auto`}
           width="auto"
-          height="100"
+          height="150"
           src={smallWhiteLogo}
           alt="logo"
         />
         <Nav />
-        <Button>Hire Me</Button>
+        <Button variant="green">Hire Me</Button>
       </div>
     </header>
   );

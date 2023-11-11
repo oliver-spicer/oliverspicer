@@ -11,6 +11,12 @@ font-family: 'Alegreya', serif;
 8386f5 purple
 54d66f green
 */
+html {
+  --bs-primary: orange;
+  --bs-primary-rgb: orange;
+}
+
+
 body {
   margin: 0;
 }
