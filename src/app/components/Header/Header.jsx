@@ -15,6 +15,7 @@ export default function Header() {
           src={smallWhiteLogo}
           alt="logo"
         />
+        <Nav />
         <Button variant="green">Hire Me</Button>
       </div>
     </header>

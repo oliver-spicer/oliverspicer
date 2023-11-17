@@ -15,6 +15,7 @@ import {
   projectLs,
   projectRu,
 } from '@/images';
+import Timeline from '@/app/components/Timeline';
 
 export default function Home() {
   return (
@@ -91,7 +92,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className="container-xl py-5 my-5">
+      <section id="aboutSection" className="container-xl py-5 my-5">
         <div className="row mx-5">
           <ImageCard image={greenLeafedTrees}>Design</ImageCard>
           <ImageCard image={snowyMountain}>Development</ImageCard>
@@ -99,7 +100,7 @@ export default function Home() {
         </div>
       </section>
       <section className="container-xl py-5 my-5">
-        <div className="row mx-5">
+        <div className="row mx-5 mb-5">
           <div className="col">
             <Heading tag="h3" appearence="h2" className={`${styles.purple}`}>
               A little about me
@@ -115,28 +116,25 @@ export default function Home() {
               These days, I’m focused on bringing great web experiences to life
               through my passion for coding.
             </p>
-            <p>If you’d like to read more, check out my story.</p>
             {false && (
-              <Button variant="purple" className="mt-5">
-                My Story
-              </Button>
+              <>
+                <p>If you’d like to read more, check out my story.</p>
+                <Button variant="purple" className="mt-5">
+                  My Story
+                </Button>
+              </>
             )}
           </div>
         </div>
       </section>
       <section
-        className={`${styles.parallax} container-fluid mt-5 text-center`}
-        style={{
-          backgroundImage: `url(/images/log-pile50.jpg)`,
-          padding: '300px 0',
-          color: '#fff',
-          position: 'relative',
-        }}
+        id="experienceSection"
+        className={`${styles.experienceSection} container-fluid py-5 position-relative`}
       >
         <div
           style={{
             position: 'absolute',
-            top: 0,
+            top: '-90px',
             left: 0,
             width: '100%',
             overflow: 'hidden',
@@ -153,13 +151,69 @@ export default function Home() {
               position: 'relative',
               display: 'block',
               width: 'calc(100% + 1.3px)',
-              height: '100px',
+              height: '90px',
+              transform: 'rotateY(180deg)',
             }}
           >
             <path
-              d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
-              class="shape-fill"
-              style={{ fill: '#FFFFFF' }}
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity="1"
+              className="shape-fill"
+              style={{
+                fill: '#8386f5',
+              }}
+            ></path>
+          </svg>
+        </div>
+        <Heading
+          tag="h2"
+          appearence="h1"
+          className={`${styles.secondaryHeader} text-center`}
+        >
+          Experiences
+        </Heading>
+        <Timeline />
+      </section>
+      <section
+        className={`${styles.parallax} container-fluid text-center`}
+        style={{
+          backgroundImage: `url(/images/log-pile50.jpg)`,
+          padding: '300px 0',
+          color: '#fff',
+          position: 'relative',
+        }}
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            overflow: 'hidden',
+            lineHeight: 0,
+            transform: 'rotate(0deg)',
+          }}
+        >
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            style={{
+              position: 'relative',
+              display: 'block',
+              width: 'calc(100% + 1.3px)',
+              height: '90px',
+              transform: 'rotateY(180deg)',
+            }}
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity="1"
+              className="shape-fill"
+              style={{
+                fill: '#8386f5',
+              }}
             ></path>
           </svg>
         </div>
@@ -171,12 +225,11 @@ export default function Home() {
           You're still here ?
         </Heading>
         <p className="py-3">
-          If you’re reading this, I’ve successfully caught your attention. Great
-          !
+          Thanks for sticking around ! I would love to hear from you.
           <br />
-          I’m always open to discussing potential collaborations.
+          Any feedback on what I could do better is greatly appreciated.
         </p>
-        <Button variant="green-semi-outline">Let's work together</Button>
+        <Button variant="green-semi-outline">Get in touch</Button>
         {false && (
           <div
             style={{
@@ -228,15 +281,19 @@ export default function Home() {
       <section className={styles.cta}>
         <div className={`container-xl`}>
           <div className="row d-flex h-100 px-5 align-items-center">
-            <div className="col-5">
+            <div className="col-3">
               <Heading tag="h2" appearence="h1" className={`${styles.purple}`}>
                 Start a project
               </Heading>
             </div>
-            <div className="col-5">
-              <p>Interested in collaborating ? Send me a mesage !</p>
+            <div className="col text-center">
+              <p>
+                Interested in working together ?
+                <br />
+                I’m always open to discussing new ideas.
+              </p>
             </div>
-            <div className="col-2 text-center">
+            <div className="col-3 text-center">
               <Button variant="green">Let's Go !</Button>
             </div>
           </div>

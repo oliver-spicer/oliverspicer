@@ -23,18 +23,13 @@ export default function Nav() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#aboutSection">
                 About
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
+                Experiences
               </a>
             </li>
           </ul>
