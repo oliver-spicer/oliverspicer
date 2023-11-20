@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Button from '@/components/Button';
 import ImageCard from '@/components/Cards/ImageCard';
-import Heading from '@/components/Heading';
+import { Heading, MotionHeading } from '@/components/Heading';
+import Timeline from '@/app/components/Timeline';
+import { motion } from 'framer-motion';
 
 import styles from './Home.module.scss';
 
@@ -15,7 +18,6 @@ import {
   projectLs,
   projectRu,
 } from '@/images';
-import Timeline from '@/app/components/Timeline';
 
 export default function Home() {
   return (
@@ -24,20 +26,56 @@ export default function Home() {
       <section
         className={`${styles.heroSection} container-fluid text-center pb-5 mb-5 d-flex flex-column justify-content-center`}
       >
-        <p className={`${styles.mainHeader} h1 mb-3`}>Hi. I'm Oliver</p>
-        <Heading
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 80 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0, duration: 1 },
+            },
+          }}
+          className={`${styles.mainHeader} h1 mb-3`}
+        >
+          Hi. I'm Oliver
+        </motion.p>
+        <MotionHeading
           tag="h1"
           appearence="h2"
-          className={`${styles.subHeader} mb-4`}
+          className={`${styles.subHeader} ${styles.motionHeading} mb-4`}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 80 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.3, duration: 0.8 },
+            },
+          }}
         >
           Passionate software engineer with an <br />
           obession with web design & development.
-        </Heading>
-        <p className={`h5 mb-2`}>
+        </MotionHeading>
+        <motion.p
+          className={`h5 mb-2`}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 80 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.6, duration: 0.6 },
+            },
+          }}
+        >
           I love to build clean & efficient websites and applications, focusing
           <br />
           on intuitive user experiences.
-        </p>
+        </motion.p>
         {false && (
           <div className="pt-3">
             <Button variant="green" className="me-3">

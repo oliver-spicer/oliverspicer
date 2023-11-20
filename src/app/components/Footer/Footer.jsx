@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './Footer.module.scss';
 import { whiteLogo } from '@/images';
-import Heading from '../Heading';
+import { Heading } from '../Heading';
 export default function Footer() {
   return (
     <footer className={`${styles.footer} container-fluid pb-3`}>

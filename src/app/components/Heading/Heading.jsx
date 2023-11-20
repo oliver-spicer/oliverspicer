@@ -1,16 +1,24 @@
+/* eslint-disable react/display-name */
+import { motion } from 'framer-motion';
+import { forwardRef } from 'react';
 import styles from './Heading.module.scss';
 
-export default function Heading({ children, tag: Tag, appearence, className }) {
-  if (!Tag) return <h1>{children}</h1>;
-  return (
-    <Tag
-      className={
-        (appearence !== undefined ? appearence : '') +
-        ' ' +
-        (className !== undefined ? className : '')
-      }
-    >
-      {children}
-    </Tag>
-  );
-}
+export const Heading = forwardRef(
+  ({ children, tag: Tag, appearence, className }, ref) => {
+    if (!Tag) return <h1 ref={ref}>{children}</h1>;
+    return (
+      <Tag
+        ref={ref}
+        className={
+          (appearence !== undefined ? appearence : '') +
+          ' ' +
+          (className !== undefined ? className : '')
+        }
+      >
+        {children}
+      </Tag>
+    );
+  }
+);
+
+export const MotionHeading = motion(Heading);

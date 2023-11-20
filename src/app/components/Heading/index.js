@@ -1,2 +1,2 @@
-import Heading from './Heading';
-export default Heading;
+import { Heading, MotionHeading } from './Heading';
+export {Heading, MotionHeading}
