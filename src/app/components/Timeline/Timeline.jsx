@@ -12,7 +12,7 @@ export default function Timeline() {
       opacity: 1,
       transition: {
         duration: 1.5,
-        staggerChildren: 0.8,
+        staggerChildren: 0.3,
       },
     },
   };

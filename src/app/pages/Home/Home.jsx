@@ -18,6 +18,7 @@ import {
   projectLs,
   projectRu,
 } from '@/images';
+import Motion from '@/app/components/Motion';
 
 export default function Home() {
   return (
@@ -131,39 +132,125 @@ export default function Home() {
         </div>
       </section>
       <section id="aboutSection" className="container-xl py-5 my-5">
-        <div className="row mx-5">
-          <ImageCard image={greenLeafedTrees}>Design</ImageCard>
-          <ImageCard image={snowyMountain}>Development</ImageCard>
-          <ImageCard image={topOfMountain}>Integration</ImageCard>
-        </div>
-      </section>
-      <section className="container-xl py-5 my-5">
-        <div className="row mx-5 mb-5">
-          <div className="col">
-            <Heading tag="h3" appearence="h2" className={`${styles.purple}`}>
-              A little about me
-            </Heading>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-200px' }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                duration: 5,
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <div className="row m-5">
+            <Motion
+              variants={{
+                hidden: { opacity: 0, scale: 0.5 },
+                show: {
+                  opacity: 1,
+                  scale: [0.5, 1.1, 1],
+                },
+              }}
+              transition={{ type: 'ease-in-out', duration: 0.5 }}
+              className="col"
+            >
+              <ImageCard image={greenLeafedTrees}>Design</ImageCard>
+            </Motion>
+            <Motion
+              variants={{
+                hidden: { opacity: 0, scale: 0.5 },
+                show: {
+                  opacity: 1,
+                  scale: [0.5, 1.1, 1],
+                },
+              }}
+              transition={{ type: 'ease-in-out', duration: 0.5 }}
+              className="col"
+            >
+              <ImageCard image={snowyMountain}>Development</ImageCard>
+            </Motion>
+            <Motion
+              variants={{
+                hidden: { opacity: 0, scale: 0.5 },
+                show: {
+                  opacity: 1,
+                  scale: [0.5, 1.1, 1],
+                },
+              }}
+              transition={{ type: 'ease-in-out', duration: 0.5 }}
+              className="col"
+            >
+              <ImageCard image={topOfMountain}>Integration</ImageCard>
+            </Motion>
           </div>
-          <div className="col">
-            <p className="pb-2">
-              Over the past 10+ years, I’ve worked on various projects from web
-              design to software architecture. All the while, I’ve continued to
-              grow as an IT expert and as a person.
-            </p>
-            <p className="pb-2">
-              These days, I’m focused on bringing great web experiences to life
-              through my passion for coding.
-            </p>
-            {false && (
-              <>
-                <p>If you’d like to read more, check out my story.</p>
-                <Button variant="purple" className="mt-5">
-                  My Story
-                </Button>
-              </>
-            )}
+          <div className="row m-5 py-5">
+            <div className="col">
+              <Motion
+                variants={{
+                  hidden: { opacity: 0, x: -60 },
+                  show: {
+                    opacity: 1,
+                    x: [-60, 20, 0],
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
+                <Heading
+                  tag="h3"
+                  appearence="h2"
+                  className={`${styles.purple}`}
+                >
+                  A little about me
+                </Heading>
+              </Motion>
+            </div>
+            <div className="col">
+              <Motion
+                variants={{
+                  hidden: { opacity: 0, x: 60 },
+                  show: {
+                    opacity: 1,
+                    x: [60, -20, 0],
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
+                <p className="pb-2">
+                  Over the past 10+ years, I’ve worked on various projects from
+                  web design to software architecture. All the while, I’ve
+                  continued to grow as an IT expert and as a person.
+                </p>
+              </Motion>
+              <Motion
+                variants={{
+                  hidden: { opacity: 0, x: 60 },
+                  show: {
+                    opacity: 1,
+                    x: [60, -20, 0],
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
+                <p className="pb-2">
+                  These days, I’m focused on bringing great web experiences to
+                  life through my passion for coding.
+                </p>
+              </Motion>
+              {false && (
+                <>
+                  <p>If you’d like to read more, check out my story.</p>
+                  <Button variant="purple" className="mt-5">
+                    My Story
+                  </Button>
+                </>
+              )}
+            </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section
         id="experienceSection"
@@ -255,19 +342,67 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-        <Heading
-          tag="h2"
-          appearence="h1"
-          className={`${styles.secondaryHeader} ${styles.green} fst-italic`}
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-200px' }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                duration: 5,
+                staggerChildren: 0.2,
+              },
+            },
+          }}
         >
-          You're still here ?
-        </Heading>
-        <p className="py-3">
-          Thanks for sticking around ! I would love to hear from you.
-          <br />
-          Any feedback on what I could do better is greatly appreciated.
-        </p>
-        <Button variant="green-semi-outline">Get in touch</Button>
+          <Motion
+            variants={{
+              hidden: { opacity: 0, scale: 1.5 },
+              show: {
+                opacity: 1,
+                scale: [1.5, 0.9, 1],
+              },
+            }}
+            transition={{ type: 'ease-in-out', duration: 0.5 }}
+          >
+            <Heading
+              tag="h2"
+              appearence="h1"
+              className={`${styles.secondaryHeader} ${styles.green} fst-italic`}
+            >
+              You're still here ?
+            </Heading>
+          </Motion>
+          <Motion
+            variants={{
+              hidden: { opacity: 0, scale: 1.5 },
+              show: {
+                opacity: 1,
+                scale: [1.5, 0.9, 1],
+              },
+            }}
+            transition={{ type: 'ease-in-out', duration: 0.5 }}
+          >
+            <p className="py-3">
+              Thanks for sticking around ! I would love to hear from you.
+              <br />
+              Any feedback on what I could do better is greatly appreciated.
+            </p>
+          </Motion>
+          <Motion
+            variants={{
+              hidden: { opacity: 0, scale: 1.5 },
+              show: {
+                opacity: 1,
+                scale: [1.5, 0.9, 1],
+              },
+            }}
+            transition={{ type: 'ease-in-out', duration: 0.5 }}
+          >
+            <Button variant="green-semi-outline">Get in touch</Button>
+          </Motion>
+        </motion.div>
         {false && (
           <div
             style={{
