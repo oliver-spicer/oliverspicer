@@ -453,23 +453,68 @@ export default function Home() {
       )}
       <section className={styles.cta}>
         <div className={`container-xl`}>
-          <div className="row d-flex h-100 px-5 align-items-center">
+          <motion.div
+            className="row d-flex h-100 px-5 align-items-center"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: '-200px' }}
+            variants={{
+              hidden: {},
+              show: {
+                transition: {
+                  staggerChildren: 0.2,
+                },
+              },
+            }}
+          >
             <div className="col-3">
-              <Heading tag="h2" appearence="h1" className={`${styles.purple}`}>
-                Start a project
-              </Heading>
+              <Motion
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
+                <Heading
+                  tag="h2"
+                  appearence="h1"
+                  className={`${styles.purple}`}
+                >
+                  Start a project
+                </Heading>
+              </Motion>
             </div>
             <div className="col text-center">
-              <p>
+              <Motion
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
                 Interested in working together ?
                 <br />
                 I’m always open to discussing new ideas.
-              </p>
+              </Motion>
             </div>
             <div className="col-3 text-center">
-              <Button variant="green">Let's Go !</Button>
+              <Motion
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                  },
+                }}
+                transition={{ type: 'ease-in-out', duration: 0.5 }}
+              >
+                <Button variant="green">Let's Go !</Button>
+              </Motion>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <Footer />

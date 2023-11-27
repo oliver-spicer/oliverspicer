@@ -52,6 +52,7 @@
 .cta {
   height: 0px;
   position: relative;
+  overflow: visible;
   
   & > div {
     border-radius: 5px;
