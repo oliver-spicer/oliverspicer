@@ -2,7 +2,7 @@
 'use client';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import ImageCard from '@/components/Cards/ImageCard';
 import { Heading, MotionHeading } from '@/components/Heading';
 import Timeline from '@/app/components/Timeline';
@@ -19,8 +19,11 @@ import {
   projectRu,
 } from '@/images';
 import Motion from '@/app/components/Motion';
+import Modal from '@/app/components/Modal';
+import { useState } from 'react';
 
 export default function Home() {
+  const [displayModal, setDisplayModal] = useState(false);
   return (
     <main className={styles.home}>
       <Header />
@@ -511,13 +514,18 @@ export default function Home() {
                 }}
                 transition={{ type: 'ease-in-out', duration: 0.5 }}
               >
-                <Button variant="green">Let's Go !</Button>
+                <Button variant="green" onClick={() => setDisplayModal(true)}>
+                  Let's Go !
+                </Button>
               </Motion>
             </div>
           </motion.div>
         </div>
       </section>
       <Footer />
+      {displayModal && (
+        <Modal setDisplayTo={setDisplayModal}>Contact Form</Modal>
+      )}
     </main>
   );
 }

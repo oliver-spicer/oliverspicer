@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { smallWhiteLogo } from '@/images';
 import styles from './Header.module.scss';
 import Nav from '@/components/Nav';
-import Button from '../Button';
+import { Button } from '../Button';
 
 export default function Header() {
   return (
