@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .centered {
@@ -22,11 +22,11 @@
 }
 .modal {
   z-index: 9999;
-  background: #DDD;
+  background: #FFF;
   padding-top: 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
   box-shadow: 0 0 20px 10px rgba(0,0,0,.2);
 }
 .header {

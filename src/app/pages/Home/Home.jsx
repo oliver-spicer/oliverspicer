@@ -21,12 +21,13 @@ import {
 import Motion from '@/app/components/Motion';
 import Modal from '@/app/components/Modal';
 import { useState } from 'react';
+import ContactForm from '@/app/components/ContactForm';
 
 export default function Home() {
   const [displayModal, setDisplayModal] = useState(false);
   return (
     <main className={styles.home}>
-      <Header />
+      <Header setDisplayTo={setDisplayModal} />
       <section
         className={`${styles.heroSection} container-fluid text-center pb-5 mb-5 d-flex flex-column justify-content-center`}
       >
@@ -524,7 +525,9 @@ export default function Home() {
       </section>
       <Footer />
       {displayModal && (
-        <Modal setDisplayTo={setDisplayModal}>Contact Form</Modal>
+        <Modal setDisplayTo={setDisplayModal}>
+          <ContactForm />
+        </Modal>
       )}
     </main>
   );

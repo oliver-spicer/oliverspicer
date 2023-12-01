@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 import Nav from '@/components/Nav';
 import { Button } from '../Button';
 
-export default function Header() {
+export default function Header({ setDisplayTo }) {
   return (
     <header className={styles.header}>
       <div className="container-xl d-flex align-items-center">
@@ -16,7 +16,9 @@ export default function Header() {
           alt="logo"
         />
         <Nav />
-        <Button variant="green">Hire Me</Button>
+        <Button variant="green" onClick={() => setDisplayTo(true)}>
+          Hire Me
+        </Button>
       </div>
     </header>
   );

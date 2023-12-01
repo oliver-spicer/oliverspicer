@@ -18,30 +18,32 @@ export default function Modal(props) {
           onClick={() => setDisplayTo(false)}
         />
         <motion.div
-          className={`${styles.modal} container-sm`}
+          className={`${styles.modal}`}
           initial="hidden"
           animate="visible"
           variants={{
-            hidden: { opacity: 0, scale: 0.7 },
+            hidden: { opacity: 0, translateY: '100%' },
             visible: {
               opacity: 1,
-              scale: 1,
-              transition: { delay: 0, duration: 0.3 },
+              translateY: 0,
+              transition: { type: 'linear', delay: 0, duration: 0.4 },
             },
           }}
         >
-          <div className={styles.header}>
-            Modal Header
-            <FontAwesomeIcon
-              icon={faXmark}
-              size="lg"
-              style={{ color: '#e55757' }}
-              className={styles.closeButton}
-              onClick={() => setDisplayTo(false)}
-            />
-          </div>
-          <div className={`${styles.body} pt-3 mx-5 pb-5`}>
-            {props.children}
+          <div className="container-sm">
+            <div className={styles.header}>
+              Modal Header
+              <FontAwesomeIcon
+                icon={faXmark}
+                size="lg"
+                style={{ color: '#e55757' }}
+                className={styles.closeButton}
+                onClick={() => setDisplayTo(false)}
+              />
+            </div>
+            <div className={`${styles.body} pt-3 mx-5 pb-5`}>
+              {props.children}
+            </div>
           </div>
         </motion.div>
       </div>
