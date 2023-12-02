@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './ContactForm.module.scss';
+import Input from './Input';
 export default function ContactForm() {
   const [contact, setContact] = useState({
     firstname: '',
@@ -13,59 +14,48 @@ export default function ContactForm() {
   };
 
   const change = (e) => {
+    console.log(e.target);
     setContact({ ...contact, [e.target.name]: e.target.value });
+    console.log(contact);
   };
   return (
-    <form onSubmit={submit}>
+    <form className={styles.form} onSubmit={submit}>
       <div className="row">
         <div className="col">
-          <label htmlFor="firstname">
-            Firstname
-            <input
-              id="firstname"
-              type="text"
-              value={contact.firstname}
-              onChange={change}
-              placeholder="Jean"
-            />
-          </label>
+          <Input
+            id="firstname"
+            label="First Name"
+            value={contact.firstname}
+            onChange={change}
+          />
         </div>
         <div className="col">
-          <label htmlFor="lastname">
-            Lastname
-            <input
-              id="lastname"
-              type="text"
-              value={contact.lastname}
-              onChange={change}
-              placeholder="Dupont"
-            />
-          </label>
+          <Input
+            id="lastname"
+            label="Last Name"
+            value={contact.lastname}
+            onChange={change}
+          />
         </div>
         <div className="col">
-          <label htmlFor="email">
-            Email
-            <input
-              id="email"
-              type="email"
-              value={contact.email}
-              onChange={change}
-              placeholder="hello@jeandupont.com"
-            />
-          </label>
+          <Input
+            id="email"
+            label="Email"
+            value={contact.email}
+            onChange={change}
+          />
         </div>
       </div>
       <div className="row">
-        <label htmlFor="message">
-          Message
-          <textarea
+        <div className="col">
+          <Input
             id="message"
+            label="Message"
             value={contact.message}
             onChange={change}
-            placeholder="Write your message here"
-            rows="8"
-          ></textarea>
-        </label>
+            type="textarea"
+          />
+        </div>
       </div>
     </form>
   );
