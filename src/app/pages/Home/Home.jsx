@@ -158,7 +158,7 @@ export default function Home() {
           >
             <path
               d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
-              class="shape-fill"
+              className="shape-fill"
               style={{ fill: '#FFFFFF' }}
             ></path>
           </svg>
@@ -202,7 +202,7 @@ export default function Home() {
             >
               <path
                 d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
-                class="shape-fill"
+                className="shape-fill"
                 style={{ fill: '#FFFFFF' }}
               ></path>
             </svg>
