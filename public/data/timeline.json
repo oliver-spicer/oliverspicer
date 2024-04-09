@@ -1,0 +1,56 @@
+[
+  {
+    "id" : 1,
+    "title" : "Full Stack Developer",
+    "period" : "2018 - Present",
+    "company" : "Capgemini",
+    "tags" : [
+      "Vue.js", "Javascript", "PHP", "CI/CD"
+    ]
+  },
+  {
+    "id" : 2,
+    "title" : "Full Stack Developer",
+    "period" : "2017 - 2018",
+    "company" : "NETexcom",
+    "tags" : [
+      "ASP", "Javascript", "CSS"
+    ]
+  },
+  {
+    "id" : 3,
+    "title" : "Full Stack Engineer",
+    "period" : "2016 - 2017",
+    "company" : "SAP",
+    "tags" : [
+      ".NET", "C#", "Javascript","CI/CD","Jenkins"
+    ]
+  },
+  {
+    "id" : 4,
+    "title" : "Web Developer",
+    "period" : "2015 - 2016",
+    "company" : "Santiane",
+    "tags" : [
+      "HTML", "CSS", "Javascript","PHP","MySQL"
+    ]
+  },
+  {
+    "id" : 5,
+    "title" : "Web Developer",
+    "period" : "2014 - 2015",
+    "company" : "Manelli",
+    "tags" : [
+      "Twig", "CSS", "Javascript","PHP","MySQL","Prestashop"
+    ]
+  },
+  {
+    "id" : 6,
+    "title" : "Webmaster",
+    "period" : "2013",
+    "company" : "ICInformatique",
+    "tags" : [
+      "HTML", "CSS", "Javascript","PHP","Wordpress"
+    ]
+  }
+]

@@ -12,6 +12,9 @@
   &.btn-green {
     background-color: $green;
     color: #fff;
+    &:hover {
+      background-color: $purple;
+    }
   }
   &.btn-green-outline {
     background-color: none;
@@ -38,6 +41,9 @@
   &.btn-purple {
     background-color: $purple;
     color: #fff;
+    &:hover {
+      background-color: $green;
+    }
   }
   &.btn-purple-outline {
     background-color: none;

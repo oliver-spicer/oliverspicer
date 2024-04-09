@@ -1,0 +1,59 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 999;
+}
+.wrapper {
+  display:flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+.centered {
+  
+}
+.modal {
+  z-index: 9999;
+  background: #FFF;
+  padding-top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,.2);
+}
+.header {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  
+  button {
+    position: absolute;
+    right: 0px;
+  }
+}
+.body {
+}
+.closeButton {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}

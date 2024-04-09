@@ -10,6 +10,12 @@
     background: linear-gradient(110deg, $green 0%, $purple 100%);
   }
 
+  .experienceSection {
+    background-color: $purple;
+    margin-top: 90px;
+    color: #fff;
+  }
+
   .mainHeader {
     font-size: 100px !important;
   }
@@ -18,6 +24,9 @@
   }
   .secondaryHeader {
     font-size: 60px !important;
+  }
+  .motionHeading {
+    opacity: 0;
   }
 }
 .green {
@@ -43,6 +52,7 @@
 .cta {
   height: 0px;
   position: relative;
+  overflow: visible;
   
   & > div {
     border-radius: 5px;
