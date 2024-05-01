@@ -1,0 +1,50 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:lts-alpine
+  stage: build
+  script:
+    - npm install --progress=false
+    - export NODE_OPTIONS=--openssl-legacy-provider
+    - npm run build
+  cache:
+     paths:
+       - node_modules/ 
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - dist
+
+deploy_staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: http://dev.oliverspicer.com
+  before_script:
+  # Setup SSH deploy keys
+    - mkdir -p ~/.ssh
+    - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - scp -r dist/* dev@92.222.83.7:/home/dev/sites/dev-oliverspicer/
+  only:
+    - dev
+
+deploy_prod:
+  stage: deploy
+  environment:
+    name: production
+    url: http://www.oliverspicer.com
+  before_script:
+  # Setup SSH deploy keys
+    - mkdir -p ~/.ssh
+    - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - scp -r dist/* dev@92.222.83.7:/home/dev/sites/oliverspicer/
+  only:
+    - build

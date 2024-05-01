@@ -1,7 +1,9 @@
+import { ConstructionPage } from '@/features/construction';
+
 export default function App() {
-    return (
-        <>
-            <div>Hello World</div>
-        </>
-    )
+  return (
+    <>
+      <ConstructionPage />
+    </>
+  );
 }
