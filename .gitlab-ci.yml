@@ -32,7 +32,7 @@ deploy_staging:
     - scp -r dist/* dev@92.222.83.7:/home/dev/sites/dev-oliverspicer/
   only:
     variables:
-      - $CI_COMMIT_MESSAGE =~ /^[staging] .*$/
+      - $CI_COMMIT_MESSAGE =~ /[staging]/
 
 deploy_prod:
   stage: deploy
