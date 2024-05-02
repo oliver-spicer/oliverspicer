@@ -2,6 +2,12 @@
 export default {
   content: ["./index.html","./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    borderWidth: {
+      '3': '3px',
+    },
+    letterSpacing: {
+      tightest: '-.15em'
+    },
     colors: {
       'green': {
           50:  '#F3FAF4',
