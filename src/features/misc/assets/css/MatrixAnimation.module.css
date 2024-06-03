@@ -1,0 +1,40 @@
+.wrapper {
+  position:absolute;
+  top: left;
+  left: 0;
+  font-size: 1.5em;
+  background: rgb(32,37,33);
+  color: rgb(32,37,33);
+  font-family: monospace;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  width: 100vw;
+  z-index: -1;
+}
+
+.wrapper * {
+  opacity: 1;
+}
+
+.column > * {
+  display: block;
+  animation: 3s infinite colorPulse;
+  padding: 0 0.125em;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: rgb(160, 213, 170, .8); /* 300 lighten(green, 70%);*/
+  }
+  40% {
+    color: rgb(75, 156, 91, .2); /* 500 green;*/
+  }
+  50% {
+    color: rgb(48, 101, 59, .2); /* 700 darken(green, 5%);*/
+  }
+  100% {
+    color: rgb(36, 67, 43, .2);
+  }
+}
