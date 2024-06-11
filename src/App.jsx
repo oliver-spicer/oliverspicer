@@ -1,4 +1,5 @@
 import { HomeHeroSection, MatrixAnimation, Header } from '@/features/misc';
+import { ExperienceSection } from '@/features/experience';
 
 export default function App() {
   console.log(`  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'               \`$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  
@@ -29,6 +30,9 @@ export default function App() {
         <div className="flex flex-col grow shrink basis-0 justify-center">
           <HomeHeroSection />
         </div>
+      </div>
+      <div className="container mx-auto flex flex-col">
+        <ExperienceSection />
       </div>
     </div>
   );
