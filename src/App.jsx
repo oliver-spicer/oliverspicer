@@ -31,9 +31,11 @@ export default function App() {
           <HomeHeroSection />
         </div>
       </div>
+      {/*
       <div className="container mx-auto flex flex-col">
         <ExperienceSection />
       </div>
+      */}
     </div>
   );
 }
