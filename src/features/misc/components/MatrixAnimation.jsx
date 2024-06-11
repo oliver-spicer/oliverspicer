@@ -9,7 +9,7 @@ export default function MatrixAnimation() {
 
   useEffect(() => {
     let colData = [];
-    for (let n = 1; n < 160; n++) {
+    for (let n = 1; n < 80; n++) {
       let colContent = { duration: duration(n), data: [] };
       colContent.delay = colContent.duration / 50;
       colContent.startDelay = Math.random(100) + 1;
@@ -24,7 +24,7 @@ export default function MatrixAnimation() {
   return (
     <div className={styles.wrapper}>
       {cols.map((col, i) => (
-        <div key={i} className={`${styles.column} col-${i}`}>
+        <div key={i} className={`${styles.column} ${i % 3 == 0 ? styles.animated : ''} col-${i}`}>
           {col.data.map((row, n) => (
             <span
               key={n}

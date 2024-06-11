@@ -9,7 +9,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="">
+    <div className="container mx-auto my-3 flex justify-between">
       <Logo />
       <Nav items={items} />
     </div>

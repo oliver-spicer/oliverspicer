@@ -20,9 +20,9 @@ export default function App() {
                                     \`$$$$$$$$'`);
 
   return (
-    <div className="h-screenfont-mono">
+    <div className="h-screen font-mono">
       <MatrixAnimation />
-      <div className="container mx-auto flex flex-col bg-green-1000">
+      <div className="absolute left-0 right-0 flex flex-col bg-green-1000/75">
         <Header />
       </div>
       <div className="container mx-auto flex flex-col h-screen">

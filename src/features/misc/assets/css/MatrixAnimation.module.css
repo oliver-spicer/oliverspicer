@@ -20,8 +20,11 @@
 
 .column > * {
   display: block;
-  animation: 3s infinite colorPulse;
-  padding: 0 0.125em;
+  padding: 0 0.200em;
+  color: rgb(48, 101, 59, .2);
+}
+.column.animated > * {
+  animation: 9s infinite colorPulse;
 }
 
 @keyframes colorPulse {
