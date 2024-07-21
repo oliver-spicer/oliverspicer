@@ -1,0 +1,70 @@
+[
+  {
+    "id": "capgemini",
+    "label": "2018 - Aujourd'hui", 
+    "event": {
+      "date": "Janvier 2018 - Aujourd'hui",
+      "title": "Ingénieur Logiciel",
+      "contract": "CDI",
+      "employer": "Capgemini",
+      "description": "",
+      "tags": [],
+      "mission": {
+        "date": "Février 2018 - Aujourd'hui",
+        "title": "Développeur Full-Stack",
+        "contract": "Mission pour Capgemini",
+        "employer": "Orange",
+        "description": "Desc",
+        "tags": ["JavaScript","jQuery"]
+      }
+    }
+  },
+  {
+    "id": "netexcom",
+    "label": "2017 - 2018", 
+    "event": {
+      "date": "Octobre 2017 - Janvier 2018",
+      "title": "Développeur Full-Stack",
+      "contract": "CDI",
+      "employer": "NETexcom",
+      "description": "Desc",
+      "tags": ["ASP","CSS","JavaScript"]
+    }
+  },
+  {
+    "id": "sap",
+    "label": "2016 - 2017", 
+    "event": {
+      "date": "Octobre 2016 - Septembre 2017",
+      "title": "Ingénieur Full-Stack",
+      "contract": "Alternance Master 2",
+      "employer": "SAP",
+      "description": "Desc",
+      "tags": ["C","C#",".NET"]
+    }
+  },
+  {
+    "id": "santiane",
+    "label": "2015 - 2016", 
+    "event": {
+      "date": "Octobre 2015 - Septembre 2016",
+      "title": "Développeur Web",
+      "contract": "Alternance Master 1",
+      "employer": "Santiane",
+      "description": "Desc",
+      "tags": ["HTML","CSS","JavaScript"]
+    }
+  },
+  {
+    "id": "manelli",
+    "label": "2014 - 2015", 
+    "event": {
+      "date": "Octobre 2014 - Septembre 2015",
+      "title": "Développeur Web",
+      "contract": "Alternance Bachelor 3",
+      "employer": "Manelli",
+      "description": "Desc",
+      "tags": ["HTML","CSS","JavaScript"]
+    }
+  }
+]

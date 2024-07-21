@@ -9,9 +9,11 @@ export default function Header() {
   ];
 
   return (
-    <div className="container mx-auto my-3 flex justify-between">
-      <Logo />
-      <Nav items={items} />
+    <div className="absolute left-0 right-0 flex flex-col bg-green-1000/75">
+      <div className="container mx-auto my-3 flex justify-between">
+        <Logo />
+        <Nav items={items} />
+      </div>
     </div>
   );
 }

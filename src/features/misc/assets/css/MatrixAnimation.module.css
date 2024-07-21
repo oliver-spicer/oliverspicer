@@ -1,7 +1,8 @@
 .wrapper {
-  position:absolute;
-  top: left;
+  position:fixed;
+  top: 0;
   left: 0;
+  right: 0;
   font-size: 1.5em;
   background: rgb(32,37,33);
   color: rgb(32,37,33);
@@ -10,7 +11,6 @@
   height: 100vh;
   overflow: hidden;
   text-align: center;
-  width: 100vw;
   z-index: -1;
 }
 

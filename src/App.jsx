@@ -1,5 +1,8 @@
 import { HomeHeroSection, MatrixAnimation, Header } from '@/features/misc';
 import { ExperienceSection } from '@/features/experience';
+import { SkillsSection } from '@/features/skills';
+import { SourceCodeSection } from '@/features/sourcecode';
+import { ContactSection } from '@/features/contact';
 
 export default function App() {
   console.log(`  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'               \`$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  
@@ -23,19 +26,12 @@ export default function App() {
   return (
     <div className="h-screen font-mono">
       <MatrixAnimation />
-      <div className="absolute left-0 right-0 flex flex-col bg-green-1000/75">
-        <Header />
-      </div>
-      <div className="container mx-auto flex flex-col h-screen">
-        <div className="flex flex-col grow shrink basis-0 justify-center">
-          <HomeHeroSection />
-        </div>
-      </div>
-      {/*
-      <div className="container mx-auto flex flex-col">
-        <ExperienceSection />
-      </div>
-      */}
+      <Header />
+      <HomeHeroSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <SourceCodeSection />
+      <ContactSection />
     </div>
   );
 }
