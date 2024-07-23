@@ -1,6 +1,7 @@
 import { JobSection } from '@/features/experience';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import styles from '../assets/css/JobTimeline.module.css';
 
 export default function JobTimeline({ jobs }) {
   const [active, setActive] = useState(0);
@@ -14,22 +15,27 @@ export default function JobTimeline({ jobs }) {
 
   return (
     <>
-      <div className="h-24 flex self-stretch relative justify-around text-green-300 font-bold">
+      <div className="h-24 flex self-stretch relative justify-around text-green-300/50 font-bold text-xl">
         {jobs.map((e) => (
           <div
-            className="flex flex-col justify-center relative w-5"
+            className={`flex flex-col justify-center relative w-5 ${
+              active == e.id ? 'text-green-300 text-2xl' : ''
+            }`}
             key={e.id}
             data-active={e.id === active}
           >
-            <div className="absolute top-0 left-1/2 whitespace-nowrap -translate-x-1/2 text-xl">
+            <div className="absolute bottom-3/4 left-1/2 whitespace-nowrap -translate-x-1/2">
               {e.label}
             </div>
-            <div className="w-4 h-4 bg-green-500 rotate-45"></div>
+            <div className="w-3 h-3 bg-green-400 rotate-45"></div>
           </div>
         ))}
-        <div className="h-1 bg-green-500 w-full absolute top-1/2 -mt-0.5 flex"></div>
+        <div
+          className={`h-1 w-full absolute top-1/2 -mt-0.5 flex ${styles.timeline}`}
+        ></div>
       </div>
       <div className="grow shrink basis-0 self-stretch">
+        {/* Make a carousel component, and make the job timeline fit into it */}
         {jobs.map((e) => (
           <JobSection key={e.id} job={e} />
         ))}
