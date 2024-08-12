@@ -1,0 +1,10 @@
+.jobSection.active {
+  color: red;
+}
+
+.jobSection:not(.active) {
+  display: none;
+}
+
+.mission {
+}

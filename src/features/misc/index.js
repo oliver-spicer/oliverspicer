@@ -5,7 +5,7 @@ import HomeHeroSection from './components/HomeHeroSection'
 import MatrixAnimation from './components/MatrixAnimation'
 import Header from './components/Header'
 import Section from './components/Section'
-
+import Heading from './components/Heading'
 export {
-    Logo, Nav, NavItem, HomeHeroSection, MatrixAnimation, Header, Section
+    Logo, Nav, NavItem, HomeHeroSection, MatrixAnimation, Header, Section, Heading
 }

@@ -7,15 +7,15 @@
       "title": "Ingénieur Logiciel",
       "contract": "CDI",
       "employer": "Capgemini",
-      "description": "",
+      "description": "En mission chez Orange.",
       "tags": [],
       "mission": {
         "date": "Février 2018 - Aujourd'hui",
         "title": "Développeur Full-Stack",
         "contract": "Mission pour Capgemini",
         "employer": "Orange",
-        "description": "Desc",
-        "tags": ["JavaScript","jQuery"]
+        "description": "Création, maintenance et évolution de 6 projets actifs au sein de l’univers TV d’Orange, sur un ensemble de technologies différentes.",
+        "tags": ["JavaScript","jQuery", "Vue.JS", "JSON", "PHP", "Symfony", "SQL", "SASS", "Twig"]
       }
     }
   },
@@ -27,7 +27,7 @@
       "title": "Développeur Full-Stack",
       "contract": "CDI",
       "employer": "NETexcom",
-      "description": "Desc",
+      "description": "Chargé de maintenir et de faire évoluer la solution de comptablité NETexcom.",
       "tags": ["ASP","CSS","JavaScript"]
     }
   },
@@ -39,8 +39,8 @@
       "title": "Ingénieur Full-Stack",
       "contract": "Alternance Master 2",
       "employer": "SAP",
-      "description": "Desc",
-      "tags": ["C","C#",".NET"]
+      "description": "Chargé de la conception et développement d'un projet sur la CI/CD.",
+      "tags": ["C","C#",".NET", "Java", "jQuery", "JavaScript", "CI/CD", "Jenkins", "CSS", "UML"]
     }
   },
   {
@@ -51,8 +51,8 @@
       "title": "Développeur Web",
       "contract": "Alternance Master 1",
       "employer": "Santiane",
-      "description": "Desc",
-      "tags": ["HTML","CSS","JavaScript"]
+      "description": "Maintenance et évolutions sur l'intranet de l'entreprise qui permet la gestion de ses contrats d'assurance.",
+      "tags": ["HTML","CSS","JavaScript", "jQuery", "PHP", "MySQL"]
     }
   },
   {
@@ -63,8 +63,8 @@
       "title": "Développeur Web",
       "contract": "Alternance Bachelor 3",
       "employer": "Manelli",
-      "description": "Desc",
-      "tags": ["HTML","CSS","JavaScript"]
+      "description": "Chargé de maintenir et développer le site e-commerce.",
+      "tags": ["PHP","Prestashop","MySQL", "HTML", "CSS", "JavaScript", "Twig"]
     }
   }
 ]

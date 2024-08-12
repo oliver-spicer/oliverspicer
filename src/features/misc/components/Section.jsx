@@ -1,4 +1,6 @@
-export default function Section({
+import styles from '../assets/css/Section.module.css';
+
+const Inner = function ({
   children,
   classes,
   justify,
@@ -19,4 +21,14 @@ export default function Section({
       </section>
     </div>
   );
-}
+};
+
+Inner.Gradient = function Gradient(props) {
+  return (
+    <div className={styles.gradient}>
+      <Inner {...props} />
+    </div>
+  );
+};
+
+export default Inner;
