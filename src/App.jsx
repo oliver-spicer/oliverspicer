@@ -1,8 +1,15 @@
-import { HomeHeroSection, MatrixAnimation, Header } from '@/features/misc';
+import {
+  HomeHeroSection,
+  MatrixAnimation,
+  Header,
+  Footer,
+} from '@/features/misc';
 import { ExperienceSection } from '@/features/experience';
 import { SkillsSection } from '@/features/skills';
-import { SourceCodeSection } from '@/features/sourcecode';
 import { ContactSection } from '@/features/contact';
+
+import '/src/assets/fonts/neon-pixel.regular.ttf';
+import '/src/assets/fonts/sportrop.regular.ttf';
 
 export default function App() {
   console.log(`  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'               \`$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  
@@ -30,8 +37,8 @@ export default function App() {
       <HomeHeroSection />
       <ExperienceSection />
       <SkillsSection />
-      <SourceCodeSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

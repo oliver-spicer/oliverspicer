@@ -20,7 +20,14 @@ export default function JobSection({ job, activeJob }) {
       <div className="text-2xl font-bold text-green-500">
         {job.event.employer}
       </div>
-      <div className="mt-3 text-sm text-green-100">{job.event.description}</div>
+      <div className="mt-3 text-sm text-green-100">
+        {Array.isArray(job.event.description) &&
+          job.event.description.map((e, idx) => (
+            <p className="py-1" key={idx}>
+              {e}
+            </p>
+          ))}
+      </div>
       {job.event.mission && (
         <div className={`${styles.mission} flex mt-8`}>
           <div className={`w-10 mr-3 flex flex-col items-center`}>
@@ -43,7 +50,12 @@ export default function JobSection({ job, activeJob }) {
               {job.event.mission.employer}
             </div>
             <div className="mt-3 text-sm text-green-100">
-              {job.event.mission.description}
+              {Array.isArray(job.event.mission.description) &&
+                job.event.mission.description.map((e, idx) => (
+                  <p className="py-1" key={idx}>
+                    {e}
+                  </p>
+                ))}
             </div>
           </div>
         </div>

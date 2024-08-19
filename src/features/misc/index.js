@@ -4,8 +4,9 @@ import NavItem from './components/NavItem'
 import HomeHeroSection from './components/HomeHeroSection'
 import MatrixAnimation from './components/MatrixAnimation'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Section from './components/Section'
 import Heading from './components/Heading'
 export {
-    Logo, Nav, NavItem, HomeHeroSection, MatrixAnimation, Header, Section, Heading
+    Logo, Nav, NavItem, HomeHeroSection, MatrixAnimation, Header, Footer, Section, Heading
 }

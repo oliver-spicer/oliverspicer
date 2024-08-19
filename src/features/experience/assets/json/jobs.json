@@ -14,7 +14,14 @@
         "title": "Développeur Full-Stack",
         "contract": "Mission pour Capgemini",
         "employer": "Orange",
-        "description": "Création, maintenance et évolution de 6 projets actifs au sein de l’univers TV d’Orange, sur un ensemble de technologies différentes.",
+        "description": [
+          "Ma mission chez Orange consiste de participer au maintien et à l'évolution de projets dans l'univers TV d'Orange utilisant les technologies du web, au sein d'une équipe de 2 à 3 développeurs.",
+          "Tous les projets sur lesquels j'ai pu travailler ont été conçus pour fonctionner sur le décodeur TV d'Orange. Un environnement contraignant dû aux ressources limitées disponibles aux services TV.",
+          "En 2018, notre périmètre consistait d'un seul projet web avec un front-end JavaScript et un back-end en PHP utilisant le Framework Symfony déployé sur CloudFoundry.",
+          "Aujourd'hui, grâce aux efforts de toute l'équipe, nous avons agrandi notre périmètre et gérons désormais 6 projets actifs au sein de l'univers TV.",
+          "J'ai participé à la création ou au développement de tous ces projets, dont 2 sur lesquels je suis devenu référent technique.",
+          "J'interviens régulièrement sur l'ensemble du périmètre afin de développer les demandes d'évolutions, de réaliser les opérations de maintenance et de débugger d'éventuels erreurs rencontrées."
+        ],
         "tags": ["JavaScript","jQuery", "Vue.JS", "JSON", "PHP", "Symfony", "SQL", "SASS", "Twig"]
       }
     }
@@ -27,7 +34,10 @@
       "title": "Développeur Full-Stack",
       "contract": "CDI",
       "employer": "NETexcom",
-      "description": "Chargé de maintenir et de faire évoluer la solution de comptablité NETexcom.",
+      "description": [
+        "Chargé de maintenir & faire évoluer la solution de comptabilité NETexcom. ",
+        "Développement de fonctionnalités destiné aux clients ainsi qu'aux experts comptables de l'entreprise qui gèrent les clients. Amélioration d'outils techniques en adéquation avec les actualités fiscales."
+      ],
       "tags": ["ASP","CSS","JavaScript"]
     }
   },
@@ -39,7 +49,18 @@
       "title": "Ingénieur Full-Stack",
       "contract": "Alternance Master 2",
       "employer": "SAP",
-      "description": "Chargé de la conception et développement d'un projet sur la CI/CD.",
+      "description": [
+        "Pour la 2ème année de mon Master, j'ai travaillé pour SAP. J'ai été chargé de la conception et développement d'un projet \"Proof of Concept\" sur la CI/CD (Intégration continue et déploiement continu).", 
+        "J'ai dû créer l'architecture du projet à partir de zéro, avec des points hebdomadaires avec mon tuteur pour échanger. À travers des essais et des erreurs, j'ai pu conceptualiser la structure du projet et commencer son développement.",
+        "Cela impliquait un réseau de machines virtuelles liées à Jenkins qui exécute les process nécessaires sur chaque machine avec un monitoring et un rapport unifié par e-mail envoyé à l'utilisateur.",
+        "Pendant le développement du projet, j'ai rencontré plusieurs obstacles que j'ai pu surmonter grâce à mes connaissances en développement logiciel. J'ai dû réécrire des fichiers DLL écrites en C pour permettre au projet de fonctionner.",
+        "À mi-chemin de cette expérience, j'avais un MVP (Produit minimum viable) que j'ai pu déployer. À partir de ce moment-là, l'équipe a pu utiliser mon application quotidiennement.", 
+        "Cela leur a permis de gagner de nombreuses heures de travail chaque jour, et cela m'a permis de surveiller les éventuels bugs du projet et de les corriger.", 
+        "Grâce au succès du projet, mon tuteur m'a demandé de développer une interface web qui permettrait aux utilisateurs d'interagir avec l'application, de visualiser leurs actions et de surveiller en temps réel leurs résultats.",
+        "Pour moi, c'était l'occasion parfaite d'écrire mon mémoire de fin de Master. Le projet contenait tous les éléments nécessaires pour une rédaction complète et détaillée.",
+        "De l'exposition du raisonnement derrière l'architecture du projet à la présentation des obstacles que j'ai rencontrés et comment je les ai surmontés, cette expérience a été l'effort combiné des 5 dernières années à apprendre à devenir ingénieur logiciel.",
+        "Je me sens privilégié d'avoir fait partie d'un projet aussi complet et réussi et je suis reconnaissant à ceux qui m'ont aidé à atteindre mes objectifs."
+      ],
       "tags": ["C","C#",".NET", "Java", "jQuery", "JavaScript", "CI/CD", "Jenkins", "CSS", "UML"]
     }
   },
@@ -51,7 +72,12 @@
       "title": "Développeur Web",
       "contract": "Alternance Master 1",
       "employer": "Santiane",
-      "description": "Maintenance et évolutions sur l'intranet de l'entreprise qui permet la gestion de ses contrats d'assurance.",
+      "description": [
+        "J'ai eu l'opportunité de commencer ma première année de Master en travaillant avec Santiane, un courtier en assurances qui s'adresse aux entreprises et aux particuliers.", 
+        "J'ai travaillé sur le logiciel interne utilisé par l'entreprise pour gérer ses contrats d'assurance. Travailler pour cette entreprise a été un pas en avant par rapport à mes expériences précédentes, car je n'avais jamais travaillé sur un tel projet auparavant.",
+        "Un projet qui demandait un haut niveau de logique métier pour comprendre et développer. Je travaillais également aux côtés d'autres développeurs et j'étais en contact avec les utilisateurs du projet : les commerciaux de l'entreprise.",
+        "Cela a ouvert des opportunités de discussion et de réflexion sur la manière d'atteindre nos objectifs. J'ai pu apprendre de mes collègues tout au long de l'année et je suis devenu un meilleur développeur grâce à cette expérience."
+      ],
       "tags": ["HTML","CSS","JavaScript", "jQuery", "PHP", "MySQL"]
     }
   },
@@ -63,7 +89,14 @@
       "title": "Développeur Web",
       "contract": "Alternance Bachelor 3",
       "employer": "Manelli",
-      "description": "Chargé de maintenir et développer le site e-commerce.",
+      "description": [
+        "J'ai été recruté par Manelli pour aider à maintenir et développer leur site de e-commerce vendant des vêtements aux professionnels. Des infirmières aux ouvriers du bâtiment, leur public s'étend à une grande variété de professions.",
+        "Travailler avec Manelli a été ma première occasion de travailler en collaboration avec d'autres membres de la communauté informatique. Travailler sous la direction d'un expert en référencement naturel m'a permis de mieux comprendre les tenants et aboutissants de l'adaptation du développement web en faveur du référencement naturel.",
+        "Travailler aux côtés d'un Community Manager m'a permis de réaliser à quel point l'aspect social d'Internet joue un rôle essentiel dans le succès d'un site de e-commerce.",
+        "Mes responsabilités consistaient à maintenir le bon fonctionnement du site web et à chercher de nouvelles façons d'augmenter les ventes et d'améliorer les performances.",
+        "Pour ce faire, j'ai développé plusieurs nouvelles fonctionnalités tout au long de l'année. Par exemple, j'ai développé un plugin qui suggérait des articles complémentaires à un utilisateur en fonction du contenu de son panier.",
+        "L'objectif de ce plugin était d'augmenter la valeur moyenne du panier par client et de créer une incitation à ajouter plus de produits à leur panier avant de finaliser leur commande."
+      ],
       "tags": ["PHP","Prestashop","MySQL", "HTML", "CSS", "JavaScript", "Twig"]
     }
   }

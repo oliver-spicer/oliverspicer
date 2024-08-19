@@ -1,16 +1,14 @@
-import { Section } from '@/features/misc';
+import { Section, Heading } from '@/features/misc';
 
 export default function ContactSection() {
   return (
     <div className="flex flex-col h-screen">
-      <Section justify="justify-center">
-        <div className="text-6xl font-extrabold text-green-900 mt-[100px]">
-          Contact
+      <Section.Gradient justify="justify-center">
+        <Heading tag="h3">Contact</Heading>
+        <div className="grow shrink basis-0 self-stretch">
+          Besoin d'un développeur ? Contactez-moi !
         </div>
-        <div className="grow shrink basis-0 self-stretch bg-green-100">
-          Parcours Wrapper
-        </div>
-      </Section>
+      </Section.Gradient>
     </div>
   );
 }

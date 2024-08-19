@@ -1,5 +1,0 @@
-.active:hover {
-  transition: all 0.3s;
-  text-shadow: 0 0 3px #E4F4E7AA, 0 0 5px #E4F4E7AA, 0 0 8px #4B9C5BAA, 0 0 12px #4B9C5BAA, 0 0 15px #4B9C5BAA, 0 0 20px #4B9C5BAA;
-  box-shadow: 0 0 7px #E4F4E755, 0 0 10px #E4F4E755, 0 0 21px #4B9C5B55, 0 0 30px #4B9C5B55, 0 0 50px #4B9C5B55, 0 0 80px #4B9C5B55;
-}

@@ -16,17 +16,17 @@ export default function Carousel({ slides, active, setActive }) {
   return (
     <div className="h-full flex items-center relative">
       <div
-        className="w-8 text-9xl text-green-400/25 hover:text-green-400/75 cursor-pointer scale-y-[200%]"
+        className="w-16 text-9xl text-green-400/25 hover:text-green-400/75 cursor-pointer scale-y-[200%] text-center"
         onClick={() => nav(-1)}
       >
-        &lt;
+        <span>&lt;</span>
       </div>
       {slides}
       <div
-        className="w-8 text-9xl text-green-400/25 hover:text-green-400/75 cursor-pointer scale-y-[200%]"
+        className="w-16 text-9xl text-green-400/25 hover:text-green-400/75 cursor-pointer scale-y-[200%] text-center"
         onClick={() => nav(1)}
       >
-        &gt;
+        <span>&gt;</span>
       </div>
     </div>
   );

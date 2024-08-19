@@ -5,8 +5,8 @@ export default function JobTimeline({ jobs, activeJob, setActiveJob }) {
     <>
       {jobs.map((e) => (
         <div
-          className={`flex flex-col justify-center relative w-5 cursor-pointer hover:text-green-300 transition duration-500 ${
-            activeJob == e.id ? 'text-green-300 scale-125' : 'hover:scale-110'
+          className={`neontext flex flex-col justify-center relative w-5 cursor-pointer hover:text-green-50 ${
+            activeJob == e.id ? ' text-green-50 scale-125' : ''
           }`}
           key={e.id}
           data-active={e.id === activeJob}
