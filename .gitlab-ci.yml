@@ -29,7 +29,7 @@ deploy_staging:
     - chmod 600 ~/.ssh/id_rsa
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - scp -r dist/* tuxa7548@193.43.70.23:~/dev.oliverspicer/
+    - scp -p 8888 -r dist/* tuxa7548@193.43.70.23:~/dev.oliverspicer/
   rules:
     - if: $CI_COMMIT_MESSAGE =~ /[staging]/
 
