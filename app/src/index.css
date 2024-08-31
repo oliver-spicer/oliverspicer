@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "neonpixel";
+  src: local("NeonPixel"),
+    url("./assets/fonts/neon-pixel.regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sportrop";
+  src: local("sportrop"),
+    url("./assets/fonts/sportrop.regular.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'sportrop';
+  text-shadow: 0 0 3px #E4F4E777, 0 0 5px #E4F4E777, 0 0 8px #4B9C5B77, 0 0 12px #4B9C5B77, 0 0 15px #4B9C5B77, 0 0 20px #4B9C5B77;
+}
+.neon, .neontext, .neonbox {
+  transition: all 0.3s;
+}
+.neontext[data-active='true'], .neon[data-active='true'] {
+  text-shadow: 0 0 3px #E4F4E555, 0 0 5px #E4F4E555, 0 0 8px #4B9C5555, 0 0 12px #4B9C5555, 0 0 15px #4B9C5555, 0 0 20px #4B9C5555;
+}
+.neonbox[data-active='true'], .neon[data-active='true'] {
+  box-shadow: 0 0 7px #E4F4E733, 0 0 10px #E4F4E733, 0 0 21px #4B9C5B33, 0 0 30px #4B9C5B33, 0 0 50px #4B9C5B33, 0 0 80px #4B9C5B33;
+}
+.neontext:hover, .neon:hover {
+  text-shadow: 0 0 3px #E4F4E7AA, 0 0 5px #E4F4E7AA, 0 0 8px #4B9C5BAA, 0 0 12px #4B9C5BAA, 0 0 15px #4B9C5BAA, 0 0 20px #4B9C5BAA;
+}
+.neonbox:hover, .neon:hover {
+  box-shadow: 0 0 7px #E4F4E755, 0 0 10px #E4F4E755, 0 0 21px #4B9C5B55, 0 0 30px #4B9C5B55, 0 0 50px #4B9C5B55, 0 0 80px #4B9C5B55;
+}
+
+[data-invalid=true] {
+  color: red;
+}
+[data-invalid=true] input {
+  border: 1px solid red;
+}
